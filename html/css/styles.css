@@ -1,0 +1,118 @@
+ .card {
+         transition: transform 0.2s;
+         background: blue;
+       }
+ .card:hover{
+              transform:scale(1.05) ;
+            }
+.card-image-top{
+                  height: 150px;
+                  object-fit: cover;
+               } 
+body,html{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Arial,sans-serif;
+         }
+.header {
+            background:blue;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar {
+            max-width: 1248px;
+            padding: 0 24px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 72px;
+        }
+
+        .navbar h1 a,
+        .navbar ul li a {
+            color: white;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .navbar ul li a {
+            padding: 0 16px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navbar ul li a:hover,
+        .navbar ul li a:focus {
+            color:white;
+        }
+
+        .nav-logo img {
+            height: 60px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color:blue;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .search-bar input {
+            border: none;
+            padding: 2px;
+            flex: 1;
+        }
+
+        .search-bar button {
+            background-color:blue;
+            border: none;
+            color:white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-bar button i {
+            font-size: 16px;
+        }
+.menu-icon{
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+          }
+.bar{
+     width: 25px;
+     height: 3px;
+     background-color: #fff;
+     margin: 4px 0;
+    } 
+.menu{
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+     }  
+.menu li{
+          margin: 0 15px;
+        }  
+.menu li a{
+            text-decoration: none;
+            color: #fff;
+          } 
+@media(max-width:768px)  {.menu{
+                                  display: none;
+                                  flex-direction: column;
+                                  width: 100%;
+                              }
+.menu li{
+          text-align: center;
+          margin: 10px 0;
+       }                  
+.menu-icon{
+            display: flex;
+         }            
+                         }
+
